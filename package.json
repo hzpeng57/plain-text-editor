@@ -1,0 +1,43 @@
+{
+  "name": "plain-text-editor",
+  "version": "0.0.1",
+  "description": "A plain text editor (based on textarea)",
+  "source": "src/index.ts",
+  "main": "dist/plain-text-editor.js",
+  "umd:main": "dist/plain-text-editor.umd.js",
+  "module": "dist/plain-text-editor.mjs",
+  "exports": {
+    "types": "./dist/plain-text-editor.d.ts",
+    "require": "./dist/plain-text-editor.js",
+    "default": "./dist/plain-text-editor.modern.mjs"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzpeng57/plain-text-editor.git"
+  },
+  "keywords": [
+    "textarea",
+    "editor"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hzpeng57/plain-text-editor/issues"
+  },
+  "homepage": "https://github.com/hzpeng57/plain-text-editor#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "microbundle": "^0.15.1",
+    "prettier": "2.7.1",
+    "typescript": "^4.8.3"
+  }
+}
