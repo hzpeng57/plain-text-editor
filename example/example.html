@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>example</title>
+  <style>
+    body {
+      padding-top: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .toolbar button {
+      margin-right: 15px;
+    }
+
+    textarea {
+      width: 500px;
+      height: 250px;
+      border-radius: 6px;
+      outline: none;
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="toolbar">
+      <button onclick="editor.insertUl()">无序列表</button>
+      <button onclick="editor.insertOl()">有序列表</button>
+      <button onclick="editor.destory()">销毁</button>
+    </div>
+    <textarea id="textarea" cols="30" rows="10" placeholder="write something..."></textarea>
+  </div>
+  <script src="../dist/plain-text-editor.umd.js"></script>
+  <script>
+    const editor = new plainTextEditor({
+      input: document.getElementById('textarea'),
+    })
+  </script>
+</body>
+
+</html>
